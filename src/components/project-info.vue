@@ -1,8 +1,8 @@
 <template>
     <div class="projectInfo">
         <div class="d-flex row">
-            <div class="col-5"><p class="mr-2">{{project.description}}</p></div>
-            <div class="col-7"><img :src="project.images.gif" class="rounded  p-1 mx-1 photo" alt=""></div>
+            <div class="col-sm-12 col-md-5"><p class="mr-2">{{project.description}}</p></div>
+            <div class="col-sm-12 col-md-7"><img :src="project.images.gif" class="rounded  p-1 mx-1 photo" alt=""></div>
         </div>
         <div class="d-flex">
             <p>Made with <img v-for=" t in project.technologies" :src="t" class="lenguaje m-1 mb-2" alt="image technology" ></p>

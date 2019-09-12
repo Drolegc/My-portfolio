@@ -1,14 +1,15 @@
+/* eslint-disable global-require */
 import Vue from 'vue';
 import Vuex from 'vuex';
 
 Vue.use(Vuex);
 
-//Imagenes de 480 x 320
+// This data should not be here...
 
 export default new Vuex.Store({
   state: {
 
-    img: 'https://cdn-images-1.medium.com/max/280/1*6QYzbfSAvFDWAt3XCY7Tyw@2x.png',
+    img: require('../files/dog.jpg'),
     project: 'https://i.ytimg.com/vi/CtySquXKxYw/maxresdefault.jpg',
     technologies: [
       'data:image/png;base64,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',
@@ -29,8 +30,8 @@ export default new Vuex.Store({
           link: 'https://tucartel.uy',
         },
         images: {
-          img: "https://i.ytimg.com/vi/CtySquXKxYw/maxresdefault.jpg",
-          gif: '../files/tucartel.gif',
+          img: 'https://i.ytimg.com/vi/CtySquXKxYw/maxresdefault.jpg',
+          gif: require('../files/tucartel.gif'),
         },
         description: `
         tuCartel.uy it's a website to connect people how wants signboards
@@ -54,7 +55,7 @@ export default new Vuex.Store({
         },
         images: {
           img: 'https://i.ytimg.com/vi/CtySquXKxYw/maxresdefault.jpg',
-          gif: '../files/cppJson.gif',
+          gif: require('../files/cppJson.gif'),
         },
         description: `
         This is a basic console programm to persist data with the library JsonCpp,
@@ -78,7 +79,7 @@ export default new Vuex.Store({
         },
         images: {
           img: 'https://i.ytimg.com/vi/CtySquXKxYw/maxresdefault.jpg',
-          gif: '../files/audioParse.gif',
+          gif: require('../files/audioParse.gif'),
         },
         description: `
         The programm shows you the ParseDir directory with your .wav audios from a GUI,
@@ -103,7 +104,7 @@ export default new Vuex.Store({
         },
         images: {
           img: 'https://i.ytimg.com/vi/CtySquXKxYw/maxresdefault.jpg',
-          gif: "https://media.giphy.com/media/ZdO4NenDbsQNwUwKDB/giphy.gif",
+          gif: require('../files/twitter.gif'),
         },
         description: `
         With web scrapping you can change your Twitter password account.
@@ -125,7 +126,7 @@ export default new Vuex.Store({
         },
         images: {
           img: 'https://i.ytimg.com/vi/CtySquXKxYw/maxresdefault.jpg',
-          gif: "https://media.giphy.com/media/ZdO4NenDbsQNwUwKDB/giphy.gif",
+          gif: 'https://media.giphy.com/media/ZdO4NenDbsQNwUwKDB/giphy.gif',
         },
         description: `
         This is a project from university, simulating youtube and using Hibernate to persist data.
@@ -141,13 +142,13 @@ export default new Vuex.Store({
         links: {
           github: {
             privado: true,
-            link: 'https://github.com/Drolegc/Vue-portfolio',
+            link: 'https://github.com/Drolegc/My-portfolio',
           },
           link: '/',
         },
         images: {
           img: 'https://i.ytimg.com/vi/CtySquXKxYw/maxresdefault.jpg',
-          gif: "https://media.giphy.com/media/ZdO4NenDbsQNwUwKDB/giphy.gif",
+          gif: require('../files/portfolio.jpg'),
         },
         description: `
         My portfolio made with VueJs and Vuex

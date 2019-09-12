@@ -23,7 +23,7 @@
     },
     computed: {
       ...mapGetters(['technologies']),
-    },
+    }
   };
 </script>
 

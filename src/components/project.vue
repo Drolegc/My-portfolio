@@ -6,7 +6,7 @@
         <b-button v-b-modal="String(dataProject.id)" class="btn btn-info mb-0">
             <font-awesome-icon icon="plus" class="plus"></font-awesome-icon>
         </b-button>
-        <b-modal :id="String(dataProject.id)" :title="dataProject.title">
+        <b-modal class="modal" :id="String(dataProject.id)" :title="dataProject.title">
             <project-info :project="dataProject"></project-info>
         </b-modal>
     </div>
@@ -65,4 +65,5 @@
         outline-offset: 15px;
         text-shadow: 1px 1px 2px #427388;
     }
+
 </style>
