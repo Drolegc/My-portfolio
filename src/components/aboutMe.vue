@@ -16,7 +16,7 @@
                     <br> and i took a course about Social Psicology
                 </p>
                 <p>
-                    Seens child i love create things, from draws and paints, 
+                    Ever since i was a child, i loved create things, from drawings and paintings, 
                     <br>and now with technology i project myself
                     creating any kind of things.
                 </p>
